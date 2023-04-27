@@ -6,7 +6,7 @@ public class MyQueue {
     private int currentFirst = 0;
 
     int size() {
-        return size-currentFirst;
+        return size - currentFirst;
     }
 
     boolean empty() {
@@ -26,8 +26,16 @@ public class MyQueue {
     }
 
     String dequeue() {
-        if (size-currentFirst > 0) return arr[currentFirst++];
+        if (size - currentFirst > 0) return arr[currentFirst++];
         else return null;
+    }
+
+    String viewAll() {
+        StringBuilder sb = new StringBuilder(size-currentFirst);
+        for (int i = currentFirst; i < size; i++) {
+            sb.append(arr[i] + " ");
+        }
+        return sb.toString();
     }
 
 }

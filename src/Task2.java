@@ -13,7 +13,7 @@ public class Task2 {
         for (String word : arr) {
             myQueue.enqueue(word);
         }
-
+        System.out.println(myQueue.viewAll());
         System.out.println(myQueue.size());
         System.out.println(myQueue.dequeue());
         System.out.println(myQueue.first());
@@ -21,15 +21,10 @@ public class Task2 {
         System.out.println(myQueue.empty());
         System.out.println(myQueue.dequeue());
         System.out.println(myQueue.dequeue());
-
         System.out.println(myQueue.size());
-
+        System.out.println(myQueue.viewAll());
         System.out.println(myQueue.dequeue());
         System.out.println(myQueue.dequeue());
         System.out.println(myQueue.dequeue());
-        System.out.println(myQueue.dequeue());
-        System.out.println(myQueue.dequeue());
-        System.out.println(myQueue.dequeue());
-
     }
 }
